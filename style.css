@@ -28,12 +28,27 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 10px 0;
 }
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+.photo{
+display: inline-flex;
+
+
+
+}
+.photo img{
+width: 25%;
+height: 70%;
+position: absolute;
+right: -1px;
+left:70%;
+top: 20%;
+
 }
 .about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
@@ -88,7 +103,13 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    
 }
 .navbar .max-width{
     display: flex;
@@ -96,16 +117,16 @@ section .title::after{
     justify-content: space-between;
 }
 .navbar .logo a{
-    color: #fff;
+    color: rgb(36, 36, 36);
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: red;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: black;
 }
 .navbar .menu li{
     list-style: none;
@@ -113,7 +134,7 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -165,7 +186,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: black no-repeat center;
+    background:linear-gradient(45deg,#c90da094,#6eff00) no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -178,6 +199,7 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
+    color: #111;
 }
 .home .home-content .text-2{
     font-size: 75px;
@@ -194,25 +216,35 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    color:black;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: crimson;
-    background: none;
+    background:linear-gradient(45deg,#e7ae4494,rgba(255,255,255,0.5));
+    
 }
 
 /* about section styling */
-.about .title::after{
-    content: "My gallary";
+.about{
+background: linear-gradient(45deg,#cfcdcf94,#3785eb) no-repeat center;  
+
 }
+
+
+
+
+
 .about .about-content .left{
     width: 45%;
 }
@@ -238,38 +270,38 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    color: black;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
-    background: none;
+
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.5));
 }
 
 /* services section styling */
-.services, .teams{
+.services{
     color:#fff;
-    background: #111;
+    background: linear-gradient(45deg,#a819a894,#d0eb3be1) no-repeat center;
 }
 .services .title::before,
 .teams .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
-    background: #111;
-    content: "what i provide";
-}
+
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+   
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -277,21 +309,27 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: crimson;
+    background: linear-gradient(#1becca, rgba(255,255,255,0.3) );
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
 }
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: rgb(163, 6, 53);
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
-    color: #fff;
+    color:black;
 }
 .services .serv-content .card .text{
     font-size: 25px;
@@ -300,10 +338,11 @@ section .title::after{
 }
 
 /* skills section styling */
+.skills{
 
-.skills .title::after{
-    content: "what i know";
+    background:linear-gradient(45deg,#f7603a94,#0432ffe1) no-repeat center;
 }
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -317,18 +356,22 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: black;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -356,7 +399,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: crimson;
+    background:rgb(219, 133, 5);
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -375,11 +418,17 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "my gallary";
+.teams{
+background:linear-gradient(45deg,#177cffe3,#12f0cbe1) no-repeat center;
 }
+
 .teams .carousel .card{
-    background: #222;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -387,7 +436,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover{
-    background: crimson;
+    background:linear-gradient(45deg,#ffa217e3,#77f3dee1)
 }
 .teams .carousel .card .box{
     display: flex;
@@ -409,11 +458,11 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid #fff;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
-    border-color: #fff;
+    border-color:rgba(255,255,255,0.25);
 }
 .owl-dots{
     text-align: center;
@@ -425,7 +474,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid rgb(12, 12, 12)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -434,12 +483,12 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: crimson!important;
+    background: rgb(0, 0, 0)!important;
 }
 
 /* contact section styling */
-.contact .title::after{
-    content: "get in touch";
+.contact {
+   background:linear-gradient(45deg,#e4dda5e1 , #ff0707f3) no-repeat center;
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
@@ -475,6 +524,7 @@ section .title::after{
 }
 .contact .right form .fields{
     display: flex;
+    
 }
 .contact .right form .field,
 .contact .right form .fields .field{
@@ -494,9 +544,14 @@ section .title::after{
 }
 .contact .right form .field input,
 .contact .right form .textarea textarea{
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
     height: 100%;
     width: 100%;
-    border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -519,9 +574,13 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid crimson;
-    background: crimson;
-    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    color: #111;
     outline: none;
     font-size: 20px;
     font-weight: 500;
@@ -530,8 +589,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-    color: crimson;
-    background: none;
+    background:linear-gradient(rgba(255,255,255,0.2), #ca1a90 );
 }
 
 /* footer section styling */
