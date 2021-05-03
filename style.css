@@ -596,15 +596,31 @@ background:linear-gradient(45deg,#177cffe3,#12f0cbe1) no-repeat center;
 footer{
     background: #111;
     padding: 15px 23px;
-    color: #fff;
     text-align: center;
 }
-footer span a{
-    color: crimson;
-    text-decoration: none;
+
+footer span{
+    display: inline;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow:0 15px 25px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    color: #1becca;
+    padding: 0 12px;
+    
+
+}
+footer span i{
+    
+    cursor: pointer;
+    
+    
 }
 footer span a:hover{
-    text-decoration: underline;
+    background: red;
+    
 }
 
 
@@ -641,7 +657,12 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow:0 15px 25px rgba(0,0,0,0.05);
+        border: 1px solid rgba(255,255,255,0.25);
+        border-top: 1px solid rgba(255,255,255,0.5);
+        border-left: 1px solid rgba(255,255,255,0.25);
+        backdrop-filter: blur(4px);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -695,6 +716,10 @@ footer span a:hover{
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
+    }
+    .home .home-content .photo{
+
+        display: none;
     }
     .home .home-content .text-2{
         font-size: 60px;
