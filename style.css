@@ -134,7 +134,7 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: black;
+    color: rgb(255, 40, 40);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -186,7 +186,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background:linear-gradient(45deg,#c90da094,#6eff00) no-repeat center;
+    background-image: linear-gradient(to right top, #2f6c8c, #0070ad, #0070cc, #356ae4, #7b5af1, #7452e4, #6d4ad8, #6642cb, #1741a3, #003573, #002441, #0b1014);
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -237,7 +237,7 @@ section .title::after{
 
 /* about section styling */
 .about{
-background: linear-gradient(45deg,#cfcdcf94,#3785eb) no-repeat center;  
+    background-image: linear-gradient(to right top, #d5867a, #ce8976, #c78d74, #c08f73, #b99274);
 
 }
 
@@ -250,7 +250,7 @@ background: linear-gradient(45deg,#cfcdcf94,#3785eb) no-repeat center;
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -488,7 +488,7 @@ background:linear-gradient(45deg,#177cffe3,#12f0cbe1) no-repeat center;
 
 /* contact section styling */
 .contact {
-   background:linear-gradient(45deg,#e4dda5e1 , #ff0707f3) no-repeat center;
+    background-image: linear-gradient(to right top, #d57aa6, #e47195, #ef6a80, #f46767, #f4684b);
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);
