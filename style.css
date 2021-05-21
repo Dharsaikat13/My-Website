@@ -7,6 +7,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+.background{
+    height: 100vh;
+    width: 150vw;
+}
+
+ #particles-js{
+    height: 100%;
+    background: #a13daa;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -28,7 +37,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 10px 0;
+    padding: 0px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -186,7 +195,6 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background-image: linear-gradient(to right top, #2f6c8c, #0070ad, #0070cc, #356ae4, #7b5af1, #7452e4, #6d4ad8, #6642cb, #1741a3, #003573, #002441, #0b1014);
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -198,16 +206,22 @@ section .title::after{
     margin: auto 0 auto 30px;
 }
 .home .home-content .text-1{
+    position: absolute;
+    top: 34%;
     font-size: 27px;
     color: #111;
 }
 .home .home-content .text-2{
     font-size: 75px;
+    position: absolute;
+    top: 44%;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
     font-size: 40px;
+    position: absolute;
+    top: 59%;
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
@@ -216,6 +230,8 @@ section .title::after{
 }
 .home .home-content a{
     display: inline-block;
+    position: absolute;
+    top: 70%;
     background: rgba(255, 255, 255, 0.2);
     box-shadow:0 15px 25px rgba(0,0,0,0.05);
     border: 1px solid rgba(255,255,255,0.25);
